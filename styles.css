@@ -218,7 +218,7 @@ body {
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 60px;
-    width: 60%;
+    width: 80%;
 }
 .about-subtitle {
     margin-top: 16px;
@@ -253,7 +253,7 @@ body {
     object-fit: cover;
     position: absolute;
     bottom: 10%;
-    right: -20%
+    right: -10%
 }
 
 .about-info-showcase {
@@ -268,10 +268,10 @@ body {
     font-weight: 700;
     color: #212222;
     gap: 40px;
-    margin-right: 10vh;
+    margin-right: 4vw;
 }
 .about-numbers-item p {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
 }
 
@@ -279,17 +279,31 @@ body {
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 52px;
     font-weight: 700;
-    gap: 52px;
+    gap: 40px;
     color:  #ffc832;
+}
+
+@media (min-width: 1440px) {
+    .nav, .hero, .informative-banner, .gallery-section, .services-section, .about-section {
+        padding-left: 14vw;
+        padding-right: 14vw;
+    }
+    .gallery img {
+        height: 22vw;
+        width: 22vw;
+    }
+    .about-pad img {
+        bottom: 6%
+    }
 }
 
 @media (orientation: portrait) {
     .nav-buttons, .hero-image {
         display: none;
     }
-    .nav, .hero, .informative-banner, .gallery-section, .services-section {
+    .nav, .hero, .informative-banner, .gallery-section, .services-section, .about-section {
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -362,5 +376,40 @@ body {
     }
     .services-card {
         width: 80vw;
+    }
+    .about-info {
+        font-size: 34px;
+        width: unset;
+    }
+    .about {
+        flex-direction: column;
+        gap: 48px;
+    }
+    .about-pad {
+        padding: 16px;
+        width: 80%;
+        height:60vh
+    }
+    .about-pad p {
+        font-size: 20px;
+        width: 100%;
+    }
+    .about-info-showcase {
+        justify-content: space-between;
+    }
+    .about-pad img {
+        width: 65vw;
+        height: 65vw;
+    }
+    .about-description {
+        font-size: 30px;
+        gap: 30px;
+    }
+    .about-numbers-item p {
+        font-size: 12px;
+    }
+    .about-numbers {
+        font-size: 42px;
+        gap: 30px;
     }
 }
