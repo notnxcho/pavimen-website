@@ -29,7 +29,12 @@ body {
     user-select: none;
 }
 .logo{ 
+    width: 100px;
     cursor: pointer;
+    padding: 20px
+}
+.logo img {
+    width: 100px;
 }
 .nav-buttons {
     display: flex;
@@ -317,6 +322,14 @@ body {
     color: #444;
     font-size: 14px;
 }
+.wpp-button {
+    padding: 32px;
+    background-color: #e5e5e5;
+    gap: 16px;
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+}
 
 @media (max-width: 1440px) {
     .nav, .hero, .informative-banner, .gallery-section, .services-section, .about-section, .contact-section {
@@ -345,6 +358,9 @@ body {
     }
     .logo {
         font-size: 16px;
+    }
+    .logo img {
+        width: 60px;
     }
     .hero {
         flex-direction: column;
